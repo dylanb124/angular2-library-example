@@ -2,6 +2,9 @@
 node_modules/*
 npm-debug.log
 
+# Ignore AOT generated files
+*.ngsummary.json
+
 # TypeScript
 *.js
 *.map
