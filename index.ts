@@ -26,10 +26,13 @@ export * from './src/sample.service';
   // ]
 })
 export class SampleModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(getConfig: Function): ModuleWithProviders {
     return {
       ngModule: SampleModule,
-      providers: [SampleService]
+      providers: [
+        { provide: 'config', useFactory: getConfig },
+        SampleService
+      ]
     };
   }
 }

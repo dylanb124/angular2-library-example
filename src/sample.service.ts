@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 
 @Injectable()
 export class SampleService {
 
-  constructor() {
-
+  constructor(@Inject('config') private config: string) {
+    console.log(this.config);
   }
 }
