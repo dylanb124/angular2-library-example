@@ -1,5 +1,11 @@
 # angular2-library-example
 
+## Blog Post
+
+To follow how this project was created, please refer to the associated blog post:
+
+http://dbarnes.me/writing-an-aot-compliant-angular-library/
+
 ## Installation
 
 To install this library, run:
